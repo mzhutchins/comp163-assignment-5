@@ -34,3 +34,17 @@ if is_prime:
     print(prime_num, 'is prime!')
 else:
     print(f'{prime_num} is not prime (divisible by {count})')
+print()
+
+print('=== Challenge 3: Multiplication Table ===')
+print('Multiplication Table:')
+print('   ', end='')
+for header in range(1, 11):
+    print(f'{header:4}', end=' ')
+print()
+for row in range(1,11):
+    print(f'{row:2}', end=' ')
+    for coloum in range(1, 11):
+        print(f'{(coloum * row):4}', end=" ")
+    print("\n", end="")
+
