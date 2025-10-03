@@ -40,7 +40,7 @@ print()
 
 print('=== Challenge 3: Multiplication Table ===')
 print('Multiplication Table:')
-print('   ', end='')
+print('   ', end='') #AI corrected line
 for header in range(1, 11):
     print(f'{header:4}', end='')
 print()
