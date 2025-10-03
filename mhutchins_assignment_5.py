@@ -13,7 +13,7 @@ while current_number != 1 and current_number > 0:
         sequence.append(current_number)
     print(current_number, end=" ")
     step_count += 1
-print("\nSteps:", step_count)
+print("Steps:", step_count)
 print()
 
 print('=== Challenge 2: Prime Number Checker ===')
@@ -21,7 +21,9 @@ prime_num = int(input("Enter a number: "))
 print(f'Testing divisors from 2 to {prime_num - 1}...')
 is_prime = ""
 count = 2
-if prime_num > 1:
+if prime_num == 2:
+    is_prime = True
+elif prime_num > 1:
     i = 2
     for i in range(2, prime_num-1):
         if prime_num % i == 0:
@@ -40,11 +42,11 @@ print('=== Challenge 3: Multiplication Table ===')
 print('Multiplication Table:')
 print('   ', end='')
 for header in range(1, 11):
-    print(f'{header:4}', end=' ')
+    print(f'{header:4}', end='')
 print()
 for row in range(1,11):
     print(f'{row:2}', end=' ')
     for coloum in range(1, 11):
-        print(f'{(coloum * row):4}', end=" ")
+        print(f'{(coloum * row):4}', end="")
     print("\n", end="")
 
